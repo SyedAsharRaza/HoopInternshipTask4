@@ -1,74 +1,122 @@
-```markdown
 # Food Delivery App 🍔
 
-A modern, highly responsive, and pixel-perfect Food Delivery UI built using Flutter. This project focuses on adaptive layouts, clean state management boundaries, and robust keyboard handling for a seamless user experience.
+A modern, responsive, and pixel-perfect Food Delivery UI built with Flutter. This project focuses on clean UI architecture, responsive layouts, reusable widgets, and smooth keyboard handling to deliver a seamless user experience across different screen sizes.
 
 ---
 
 ## 📱 App Gallery
 
-| Login Screen | Home Screen | Food Detail Screen |
-| :---: | :---: | :---: |
+|                                Login Screen                                |                                Home Screen                               |                                   Food Detail Screen                                   |
+| :------------------------------------------------------------------------: | :----------------------------------------------------------------------: | :------------------------------------------------------------------------------------: |
 | <img src="screenshots/login_screen.jpeg" width="250" alt="Login Screen" /> | <img src="screenshots/home_screen.jpeg" width="250" alt="Home Screen" /> | <img src="screenshots/food_detail_screen.jpeg" width="250" alt="Food Detail Screen" /> |
 
 ---
 
-## 🚀 Key Engineering Features
+## ✨ Features
 
-* **Adaptive Architecture:** Fully dynamic grid-splitting layout using `LayoutBuilder` and flexible constraint bounds to handle multiple device aspect ratios perfectly.
-* **Proportional Layout Scaling:** Utilizes structured `MediaQuery` constraints across primary structural elements to prevent UI clipping on small or oversized displays.
-* **Defensive Input Design:** Implements clean layout isolation using `SingleChildScrollView` pairing and explicit `resizeToAvoidBottomInset: false` bounds to completely eliminate viewport overflow errors when the soft keyboard invokes.
-* **Optimal Rendering Boundaries:** Strict adherence to explicit column sizing metrics (`MainAxisSize.min`) to guarantee unpredictable dynamic content builds exactly to size without throwing unconstrained layout crashes.
-
-## 🛠️ Tech Stack & Architecture
-
-* **Framework:** Flutter (Dart)
-* **Pattern:** Clean UI/Widget Separation (Decoupled, reusable layout components isolated from primary feature view trees).
+* 📱 Responsive UI that adapts to different screen sizes.
+* 🎨 Pixel-perfect implementation based on the provided design.
+* 🍔 Beautiful food browsing interface.
+* 📄 Detailed food information screen.
+* 🔐 Clean and responsive login screen.
+* ⌨️ Proper keyboard handling with zero overflow issues.
+* ♻️ Reusable and modular widget structure.
+* ⚡ Smooth navigation and optimized layouts.
 
 ---
 
-## 🏃‍♂️ Getting Started
+## 🚀 Engineering Highlights
 
-Follow these steps to get a local copy of the project up, running, and ready for development.
+* **Responsive Layouts:** Uses `LayoutBuilder`, `Flexible`, `Expanded`, and `MediaQuery` where appropriate to create adaptive interfaces.
+* **Keyboard Safety:** Implements `SingleChildScrollView` with proper `resizeToAvoidBottomInset` handling to prevent overflow when the keyboard appears.
+* **Reusable Components:** UI elements are separated into reusable widgets to improve maintainability and reduce code duplication.
+* **Clean Architecture:** Presentation widgets are organized separately from feature screens for better readability and scalability.
+* **Flutter Best Practices:** Uses constraint-based layouts instead of fixed dimensions wherever possible.
+
+---
+
+## 🛠️ Tech Stack
+
+* **Framework:** Flutter
+* **Language:** Dart
+* **Architecture:** Modular UI with reusable widgets
+* **State Management:** Flutter's built-in state management (`setState`)
+
+---
+
+## 📂 Project Structure
+
+```text
+lib/
+├── screens/
+├── widgets/
+└── main.dart
+```
+
+---
+
+## 🚀 Getting Started
 
 ### Prerequisites
-Ensure you have the Flutter SDK installed and configured on your machine.
+
+Make sure Flutter is installed.
+
 ```bash
 flutter --version
-
 ```
 
-### Installation & Run
+---
 
-1. **Clone the repository:**
+### Installation
+
+Clone the repository:
 
 ```bash
-git clone [https://github.com/SyedAsharRaza/HoopInternshipTask4.git](https://github.com/SyedAsharRaza/HoopInternshipTask4.git)
+git clone https://github.com/SyedAsharRaza/HoopInternshipTask4.git
 cd HoopInternshipTask4
-
 ```
 
-2. **Fetch dependencies:**
+Install dependencies:
 
 ```bash
 flutter pub get
-
 ```
 
-3. **Verify the test suite passes:**
-
-```bash
-flutter test
-
-```
-
-4. **Launch the application:**
+Run the application:
 
 ```bash
 flutter run
-
 ```
 
+(Optional) Run tests:
+
+```bash
+flutter test
 ```
 
+---
+
+## 📸 Screenshots
+
+Place your screenshots inside the `screenshots/` folder:
+
 ```
+screenshots/
+├── login_screen.jpeg
+├── home_screen.jpeg
+└── food_detail_screen.jpeg
+```
+
+---
+
+## 🤝 Contributing
+
+Contributions, suggestions, and improvements are welcome. Feel free to fork the repository and submit a pull request.
+
+---
+
+## 📄 License
+
+This project is intended for learning and portfolio purposes.
+
+This version is ready to paste directly into your `README.md` on GitHub and should render correctly without any formatting issues.
