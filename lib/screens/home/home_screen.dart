@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../detail/food_detail_screen.dart';
+
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
 
@@ -80,6 +82,12 @@ class _HomeScreenState extends State<HomeScreen> {
                         final item = foodItems[index];
                         return GestureDetector(
                           onTap: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => FoodDetailScreen(item: item),
+                              ),
+                            );
                           },
                           child: Container(
                             decoration: BoxDecoration(
