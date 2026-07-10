@@ -28,7 +28,7 @@ class FoodDetailScreen extends StatelessWidget {
               child: Center(
                 child: Text(
                   item['image']!,
-                  style: TextStyle(fontSize: screenHeight * 0.15), // Font size scales safely with screen height
+                  style: TextStyle(fontSize: screenHeight * 0.15),
                 ),
               ),
             ),
